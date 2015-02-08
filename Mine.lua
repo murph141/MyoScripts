@@ -13,8 +13,10 @@ function onForegroundWindowChange(app, title)
 
   if(app == "JAVAW.EXE") then
     myo.debug("Correct Window")
+    myo.controlMouse(true)
     return true
   else
+    myo.controlMouse(false)
     return false
   end
 
@@ -32,9 +34,6 @@ function onActiveChange(isActive)
 end
 
 function mousePoseControl(pose, edge)
-
-  if(pose == "") then
-  end
 
 end
 
@@ -55,4 +54,3 @@ function onPeriodic()
 
 end
 
-myo.controlMouse(true)
