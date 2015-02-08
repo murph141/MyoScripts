@@ -44,6 +44,7 @@ function onPoseEdge(pose, edge)
 
   if(pose == "fist") then
     myo.debug("Fist")
+  end
 
 end
 
